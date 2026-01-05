@@ -1,0 +1,11 @@
+# Claude Code settings
+.claude/
+
+# Client source materials
+docs/
+
+# macOS
+.DS_Store
+
+# Temporary files
+*.tmp
