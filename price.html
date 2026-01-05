@@ -48,55 +48,42 @@
     <section class="price-section">
       <div class="price-section__inner inner">
         <h3 class="section-title">高校生向けプラン</h3>
-        <p class="price-section__note">※表示価格は税抜き（税込）です。まとめ払いで毎月払いよりも最大52,800円お得！</p>
 
-        <div class="price-table-wrap">
-          <table class="price-table">
-            <thead>
-              <tr>
-                <th>プラン</th>
-                <th>年払い</th>
-                <th>6ヶ月払い</th>
-                <th>3ヶ月払い</th>
-                <th>毎月払い</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <strong>プレミアムプラン</strong>
-                  <span class="price-table__badge">5席限定</span>
-                  <small>専用席確保</small>
-                </td>
-                <td class="price-table__recommend">27,000円<br><small>(29,700円)</small></td>
-                <td>28,000円<br><small>(30,800円)</small></td>
-                <td>29,000円<br><small>(31,900円)</small></td>
-                <td>30,000円<br><small>(33,000円)</small></td>
-              </tr>
-              <tr class="price-table__highlight">
-                <td>
-                  <strong>来放題プラン</strong>
-                  <span class="price-table__badge price-table__badge--recommend">おすすめ</span>
-                  <small>平日15:30〜22:00<br>土日祝9:00〜20:00</small>
-                </td>
-                <td class="price-table__recommend">16,500円<br><small>(18,150円)</small></td>
-                <td>18,500円<br><small>(20,350円)</small></td>
-                <td>19,500円<br><small>(21,450円)</small></td>
-                <td>20,500円<br><small>(22,550円)</small></td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>土日祝プラン</strong>
-                  <small>土日祝9:00〜20:00</small>
-                </td>
-                <td class="price-table__recommend">9,000円<br><small>(9,900円)</small></td>
-                <td>10,000円<br><small>(11,000円)</small></td>
-                <td>11,000円<br><small>(12,100円)</small></td>
-                <td>12,000円<br><small>(13,200円)</small></td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="price-cards">
+          <div class="price-card price-card--recommend">
+            <span class="price-card__badge">おすすめ</span>
+            <h4 class="price-card__name">来放題プラン</h4>
+            <p class="price-card__time">平日15:30〜22:00 / 土日祝9:00〜20:00</p>
+            <p class="price-card__price">
+              月額 <span class="price-card__amount">16,500</span>円〜
+              <small>（税込18,150円〜）</small>
+            </p>
+            <p class="price-card__note">※年払いの場合。毎月払いは20,500円/月</p>
+          </div>
+
+          <div class="price-card">
+            <span class="price-card__badge price-card__badge--limited">5席限定</span>
+            <h4 class="price-card__name">プレミアムプラン</h4>
+            <p class="price-card__time">専用席確保</p>
+            <p class="price-card__price">
+              月額 <span class="price-card__amount">27,000</span>円〜
+              <small>（税込29,700円〜）</small>
+            </p>
+            <p class="price-card__note">※年払いの場合。毎月払いは30,000円/月</p>
+          </div>
+
+          <div class="price-card">
+            <h4 class="price-card__name">土日祝プラン</h4>
+            <p class="price-card__time">土日祝9:00〜20:00</p>
+            <p class="price-card__price">
+              月額 <span class="price-card__amount">9,000</span>円〜
+              <small>（税込9,900円〜）</small>
+            </p>
+            <p class="price-card__note">※年払いの場合。毎月払いは12,000円/月</p>
+          </div>
         </div>
+
+        <p class="price-section__tip">年払いが最もお得！毎月払いより年間最大52,800円お得になります。</p>
       </div>
     </section>
 
@@ -107,30 +94,35 @@
       <div class="price-section__inner inner">
         <h3 class="section-title">浪人生向けプラン</h3>
         <p class="price-section__lead">本気で1年間、勉強に集中したいあなたへ。</p>
-        <p class="price-section__note">※年払いのみ / 3席限定</p>
 
-        <div class="price-table-wrap">
-          <table class="price-table price-table--simple">
-            <thead>
-              <tr>
-                <th>プラン</th>
-                <th>年払い（税抜/税込）</th>
-                <th>内容</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>基本プラン</strong></td>
-                <td>32,000円<small>（35,200円）</small>/月</td>
-                <td>プレミアムプラン + 月1回の面談・進路相談</td>
-              </tr>
-              <tr>
-                <td><strong>+学習カリキュラム</strong></td>
-                <td>37,000円<small>（40,700円）</small>/月</td>
-                <td>基本プラン + 志望校までの学習カリキュラム作成</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="price-cards price-cards--2col">
+          <div class="price-card">
+            <span class="price-card__badge price-card__badge--limited">3席限定</span>
+            <h4 class="price-card__name">基本プラン</h4>
+            <p class="price-card__price">
+              月額 <span class="price-card__amount">32,000</span>円
+              <small>（税込35,200円）</small>
+            </p>
+            <ul class="price-card__features">
+              <li>プレミアムプラン（専用席）</li>
+              <li>月1回の面談・進路相談</li>
+            </ul>
+            <p class="price-card__note">※年払いのみ</p>
+          </div>
+
+          <div class="price-card">
+            <span class="price-card__badge price-card__badge--limited">3席限定</span>
+            <h4 class="price-card__name">+学習カリキュラム</h4>
+            <p class="price-card__price">
+              月額 <span class="price-card__amount">37,000</span>円
+              <small>（税込40,700円）</small>
+            </p>
+            <ul class="price-card__features">
+              <li>基本プランの内容すべて</li>
+              <li>志望校までの学習カリキュラム作成</li>
+            </ul>
+            <p class="price-card__note">※年払いのみ</p>
+          </div>
         </div>
       </div>
     </section>
@@ -143,18 +135,19 @@
         <h3 class="section-title">親子プラン</h3>
         <p class="price-section__lead">お子さんが会員の保護者様限定。</p>
 
-        <div class="price-card">
-          <h3 class="price-card__name">平日来放題プラン</h3>
-          <p class="price-card__price">
-            <span class="price-card__amount">5,000</span>円/月
-            <small>（税込5,500円）</small>
-          </p>
-          <p class="price-card__time">平日9:00〜15:00</p>
-          <ul class="price-card__features">
-            <li>お子様が入会している親御様限定</li>
-            <li>1世帯につき1名の親御様が利用可能</li>
-            <li>カギの共有は不可</li>
-          </ul>
+        <div class="price-cards price-cards--1col">
+          <div class="price-card">
+            <h4 class="price-card__name">平日来放題プラン</h4>
+            <p class="price-card__time">平日9:00〜15:00</p>
+            <p class="price-card__price">
+              月額 <span class="price-card__amount">5,000</span>円
+              <small>（税込5,500円）</small>
+            </p>
+            <ul class="price-card__features">
+              <li>お子様が入会している親御様限定</li>
+              <li>1世帯につき1名の親御様が利用可能</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -167,28 +160,16 @@
         <h3 class="section-title">社会人プラン</h3>
         <p class="price-section__lead">朝のスキマ時間を有効活用。</p>
 
-        <div class="price-table-wrap">
-          <table class="price-table price-table--simple">
-            <thead>
-              <tr>
-                <th>プラン</th>
-                <th>6ヶ月払い</th>
-                <th>3ヶ月払い</th>
-                <th>毎月払い</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <strong>平日朝昼プラン</strong>
-                  <small>平日7:00〜15:00</small>
-                </td>
-                <td>6,000円<br><small>(6,600円)</small></td>
-                <td>7,000円<br><small>(7,700円)</small></td>
-                <td>8,000円<br><small>(8,800円)</small></td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="price-cards price-cards--1col">
+          <div class="price-card">
+            <h4 class="price-card__name">平日朝昼プラン</h4>
+            <p class="price-card__time">平日7:00〜15:00</p>
+            <p class="price-card__price">
+              月額 <span class="price-card__amount">6,000</span>円〜
+              <small>（税込6,600円〜）</small>
+            </p>
+            <p class="price-card__note">※6ヶ月払いの場合。毎月払いは8,000円/月</p>
+          </div>
         </div>
       </div>
     </section>
@@ -201,30 +182,21 @@
         <h3 class="section-title">法人プラン</h3>
         <p class="price-section__lead">社員教育・資格取得サポートに。福利厚生としても。</p>
 
-        <div class="price-table-wrap">
-          <table class="price-table price-table--simple">
-            <thead>
-              <tr>
-                <th>プラン</th>
-                <th>6ヶ月払い</th>
-                <th>3ヶ月払い</th>
-                <th>毎月払い</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <strong>資格取得プラン</strong>
-                  <small>平日18:00〜22:00<br>土日祝17:00〜20:00</small>
-                </td>
-                <td>48,000円<br><small>(52,800円)</small></td>
-                <td>49,000円<br><small>(53,900円)</small></td>
-                <td>50,000円<br><small>(55,000円)</small></td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="price-cards price-cards--1col">
+          <div class="price-card">
+            <h4 class="price-card__name">資格取得プラン</h4>
+            <p class="price-card__time">平日18:00〜22:00 / 土日祝17:00〜20:00</p>
+            <p class="price-card__price">
+              月額 <span class="price-card__amount">48,000</span>円〜
+              <small>（税込52,800円〜）</small>
+            </p>
+            <ul class="price-card__features">
+              <li>法人契約のみ</li>
+              <li>1契約につき5名までの社員が利用可能</li>
+            </ul>
+            <p class="price-card__note">※6ヶ月払いの場合。毎月払いは50,000円/月</p>
+          </div>
         </div>
-        <p class="price-section__note">※法人契約のみ。1契約につき5名までの社員が利用可能。</p>
       </div>
     </section>
 
