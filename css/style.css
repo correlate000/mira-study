@@ -6137,9 +6137,10 @@ h3.section-title {
 }
 
 .price-card__price small {
-  font-size: 0.875rem;
+  display: block;
+  font-size: 0.75rem;
   color: var(--color-text-muted);
-  margin-left: 0.25em;
+  margin-top: 0.25rem;
 }
 
 .price-card__amount {
