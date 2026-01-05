@@ -5164,11 +5164,27 @@ h3.section-title {
   color: var(--color-text-light);
 }
 
-.founder-message__signature strong {
-  display: block;
+.founder-message__profile {
+  margin-top: 1rem;
+}
+
+.founder-message__name {
   font-size: 1.125rem;
-  color: var(--color-text);
-  margin-top: 0.25rem;
+  font-weight: 700;
+}
+
+.founder-message__name span {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  margin-left: 0.5rem;
+}
+
+.founder-message__career {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  line-height: 1.7;
+  margin-top: 0.5rem;
 }
 
 @media (max-width: 768px) {
@@ -5178,8 +5194,15 @@ h3.section-title {
   }
 
   .founder-message__image {
-    max-width: 150px;
+    max-width: 200px;
     margin: 0 auto;
+    text-align: center;
+  }
+
+  .founder-message__name span {
+    display: block;
+    margin-left: 0;
+    margin-top: 0.25rem;
   }
 }
 
