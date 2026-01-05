@@ -463,9 +463,8 @@ h3.section-title {
 }
 
 .concept__solution {
-  font-size: 1.25rem;
-  font-weight: 500;
-  line-height: 1.8;
+  font-size: 1.125rem;
+  line-height: 2;
   color: var(--color-text);
 }
 
@@ -491,12 +490,9 @@ h3.section-title {
     text-align: center;
   }
 
-  .concept__problem {
-    font-size: 1rem;
-  }
-
+  .concept__problem,
   .concept__solution {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 
   .concept__image .wf-placeholder {
