@@ -6139,6 +6139,7 @@ h3.section-title {
 .price-card__price small {
   font-size: 0.875rem;
   color: var(--color-text-muted);
+  margin-left: 0.25em;
 }
 
 .price-card__amount {
