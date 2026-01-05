@@ -2266,6 +2266,7 @@ h3.section-title {
 .price-preview__amount {
   font-size: 1rem;
   margin-bottom: 0.5rem;
+  white-space: nowrap;
 }
 
 .price-preview__amount span {
@@ -2309,6 +2310,7 @@ h3.section-title {
   font-weight: 700;
   color: var(--color-gray-800);
   margin-top: 0.5rem;
+  white-space: nowrap;
 }
 
 .price-preview__admission {
@@ -6131,13 +6133,12 @@ h3.section-title {
 
 .price-card__price {
   margin-bottom: 0.75rem;
+  white-space: nowrap;
 }
 
 .price-card__price small {
-  display: block;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: var(--color-text-muted);
-  margin-top: 0.25rem;
 }
 
 .price-card__amount {
@@ -6176,9 +6177,9 @@ h3.section-title {
   text-align: center;
   font-size: 0.875rem;
   color: var(--color-text-light);
-  margin-top: 1.5rem;
   padding: 1rem;
   background: var(--color-gray-50);
+  margin-bottom: 1.5rem;
 }
 
 @media (max-width: 768px) {
