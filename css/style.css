@@ -3430,6 +3430,63 @@ ol {
 }
 
 /* --------------------------------------------------------------------------
+   Facility Info (営業時間・アクセス)
+   -------------------------------------------------------------------------- */
+.facility-info {
+  padding: var(--section-padding) var(--inner-padding);
+}
+
+.facility-info__inner {
+  max-width: var(--inner-width);
+  margin: 0 auto;
+}
+
+.facility-info__grid {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .facility-info__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.facility-info__item {
+  padding: 2rem;
+  background: var(--color-bg-light);
+  border-radius: var(--radius-lg);
+}
+
+.facility-info__item h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.facility-info__item dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.facility-info__item dt {
+  font-weight: 500;
+}
+
+.facility-info__item dd {
+  font-weight: 700;
+}
+
+.facility-info__note {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+}
+
+/* --------------------------------------------------------------------------
    Facility Hours
    -------------------------------------------------------------------------- */
 .facility-hours {
