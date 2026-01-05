@@ -1601,6 +1601,20 @@ ol {
   margin-bottom: 0.75rem;
 }
 
+.page-header__lead {
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  font-weight: 700;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.page-header__desc {
+  text-align: center;
+  color: var(--color-text-light);
+  margin-top: 1rem;
+  line-height: 1.8;
+}
+
 .page-content {
   padding: var(--section-padding) var(--inner-padding);
 }
