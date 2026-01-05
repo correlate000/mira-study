@@ -201,6 +201,35 @@
       padding-top: 2rem;
       border-top: 1px solid var(--color-border);
     }
+
+    .checklist {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+    }
+
+    .checklist li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--color-gray-100);
+    }
+
+    .checklist li:last-child {
+      border-bottom: none;
+    }
+
+    .checklist label {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      cursor: pointer;
+    }
+
+    .checklist input[type="checkbox"] {
+      width: 1.125rem;
+      height: 1.125rem;
+      accent-color: var(--color-gray-800);
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -291,7 +320,6 @@
           <ol class="strategy-list">
             <li><strong>ターゲットが複数</strong><br>高校生、浪人生、社会人、法人と多岐にわたる。LPでは情報過多で離脱リスク</li>
             <li><strong>検討期間が長い</strong><br>月額サービスのため複数回訪問を想定。再訪時に必要情報へ直接アクセス可能</li>
-            <li><strong>SEO観点</strong><br>将来的に「浜松 自習室」等の検索流入を狙える構造（未実装）</li>
             <li><strong>SWELL実装</strong><br>WordPressテーマで複数ページ管理が容易</li>
           </ol>
           <div class="card" style="background: var(--color-white); border-left: 4px solid var(--color-gray-800); margin-top: 2rem;">
@@ -390,46 +418,46 @@
           <h3>確認事項</h3>
 
           <h4>CMS・機能</h4>
-          <ul class="strategy-list">
-            <li>お知らせ/ニュース機能の要否</li>
-            <li>ブログ/コラム機能の要否</li>
-            <li>お問い合わせフォームの項目設計</li>
+          <ul class="checklist">
+            <li><label><input type="checkbox"> お知らせ/ニュース機能の要否</label></li>
+            <li><label><input type="checkbox"> ブログ/コラム機能の要否</label></li>
+            <li><label><input type="checkbox"> お問い合わせフォームの項目設計</label></li>
           </ul>
 
           <h4>基本情報</h4>
-          <ul class="strategy-list">
-            <li>会社名 / 屋号</li>
-            <li>代表者フルネーム</li>
-            <li>正式住所</li>
-            <li>電話番号</li>
-            <li>設立年月</li>
+          <ul class="checklist">
+            <li><label><input type="checkbox"> 会社名 / 屋号</label></li>
+            <li><label><input type="checkbox"> 代表者フルネーム</label></li>
+            <li><label><input type="checkbox"> 正式住所</label></li>
+            <li><label><input type="checkbox"> 電話番号</label></li>
+            <li><label><input type="checkbox"> 設立年月</label></li>
           </ul>
 
           <h4>外部サービス連携</h4>
-          <ul class="strategy-list">
-            <li>LINE公式アカウント URL / QRコード</li>
-            <li>Instagram URL</li>
-            <li>Googleマップ 埋め込みコード</li>
+          <ul class="checklist">
+            <li><label><input type="checkbox"> LINE公式アカウント URL / QRコード</label></li>
+            <li><label><input type="checkbox"> Instagram URL</label></li>
+            <li><label><input type="checkbox"> Googleマップ 埋め込みコード</label></li>
           </ul>
 
           <h4>画像素材</h4>
-          <ul class="strategy-list">
-            <li>代表者写真</li>
-            <li>施設写真（個別ブース、全体、入口など）</li>
-            <li>ビジョンボード / ミラスタタイプ16 / サクセスマップ イメージ</li>
-            <li>ファーストビュー背景画像</li>
+          <ul class="checklist">
+            <li><label><input type="checkbox"> 代表者写真</label></li>
+            <li><label><input type="checkbox"> 施設写真（個別ブース、全体、入口など）</label></li>
+            <li><label><input type="checkbox"> ビジョンボード / ミラスタタイプ16 / サクセスマップ イメージ</label></li>
+            <li><label><input type="checkbox"> ファーストビュー背景画像</label></li>
           </ul>
 
           <h4>料金・運営</h4>
-          <ul class="strategy-list">
-            <li>各料金プランの最終確認</li>
-            <li>閉校日・長期休暇中の営業時間</li>
+          <ul class="checklist">
+            <li><label><input type="checkbox"> 各料金プランの最終確認</label></li>
+            <li><label><input type="checkbox"> 閉校日・長期休暇中の営業時間</label></li>
           </ul>
 
           <h4>法務</h4>
-          <ul class="strategy-list">
-            <li>プライバシーポリシー内容確認</li>
-            <li>利用規約内容確認</li>
+          <ul class="checklist">
+            <li><label><input type="checkbox"> プライバシーポリシー内容確認</label></li>
+            <li><label><input type="checkbox"> 利用規約内容確認</label></li>
           </ul>
         </div>
 
