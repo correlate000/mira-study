@@ -1589,15 +1589,16 @@ ol {
 .page-header__title {
   font-size: clamp(1.5rem, 4vw, 2rem);
   font-weight: 700;
+  text-align: center;
 }
 
 .page-header__en {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 500;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
   color: var(--color-primary);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .page-content {
@@ -5014,6 +5015,11 @@ ol {
   color: var(--color-text-light);
   line-height: 1.8;
   text-align: center;
+}
+
+.about-difference__link {
+  text-align: center;
+  margin-top: 2rem;
 }
 
 /* --------------------------------------------------------------------------
