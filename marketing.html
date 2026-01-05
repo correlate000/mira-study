@@ -11,57 +11,195 @@
   <link rel="stylesheet" href="css/style.css">
   <style>
     .internal-notice {
-      background: #fff3cd;
-      border: 2px dashed #ffc107;
-      padding: 1rem;
-      margin-bottom: 2rem;
+      background: linear-gradient(135deg, #fff3cd 0%, #ffe69c 100%);
+      border: 2px solid #ffc107;
+      border-radius: 8px;
+      padding: 0.75rem 1.5rem;
       text-align: center;
       font-weight: 700;
-    }
-    .strategy-section {
+      font-size: 0.875rem;
+      color: #856404;
       margin-bottom: 3rem;
     }
+
+    .strategy-section {
+      margin-bottom: 4rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .strategy-section:last-of-type {
+      border-bottom: none;
+    }
+
     .strategy-section h3 {
-      border-left: 4px solid var(--color-gray-800);
-      padding-left: 1rem;
-      margin-bottom: 1rem;
-      font-size: 1.25rem;
+      background: var(--color-gray-800);
+      color: var(--color-white);
+      padding: 0.75rem 1.25rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.125rem;
     }
+
     .strategy-section h4 {
-      margin: 1.5rem 0 0.75rem;
+      margin: 2rem 0 1rem;
       font-size: 1rem;
+      color: var(--color-gray-800);
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--color-gray-200);
     }
+
     .flow-diagram {
       background: var(--color-gray-50);
-      padding: 1.5rem;
-      font-family: monospace;
-      white-space: pre-line;
-      line-height: 1.8;
-      margin: 1rem 0;
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: 2rem;
+      font-family: "Noto Sans JP", sans-serif;
+      line-height: 2;
+      margin: 1.5rem 0;
+      text-align: center;
     }
+
+    .flow-step {
+      display: inline-block;
+      background: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: 4px;
+      padding: 0.5rem 1rem;
+      margin: 0.25rem;
+      font-size: 0.875rem;
+    }
+
+    .flow-step--highlight {
+      background: var(--color-gray-800);
+      color: var(--color-white);
+      border-color: var(--color-gray-800);
+    }
+
+    .flow-arrow {
+      display: block;
+      color: var(--color-gray-400);
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
+    }
+
+    .flow-label {
+      font-weight: 700;
+      color: var(--color-gray-600);
+      margin-bottom: 0.5rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+    }
+
     .strategy-table {
       width: 100%;
       border-collapse: collapse;
-      margin: 1rem 0;
+      margin: 1.5rem 0;
+      font-size: 0.9375rem;
     }
+
     .strategy-table th,
     .strategy-table td {
       border: 1px solid var(--color-border);
-      padding: 0.75rem;
+      padding: 1rem;
       text-align: left;
       vertical-align: top;
     }
+
     .strategy-table th {
       background: var(--color-gray-100);
       font-weight: 700;
-      width: 30%;
+      width: 25%;
     }
+
+    .strategy-table thead th {
+      background: var(--color-gray-800);
+      color: var(--color-white);
+      text-align: center;
+    }
+
+    .strategy-table tbody tr:nth-child(even) {
+      background: var(--color-gray-50);
+    }
+
     .strategy-list {
-      margin: 0.5rem 0;
-      padding-left: 1.5rem;
+      margin: 1rem 0;
+      padding-left: 0;
+      list-style: none;
     }
+
     .strategy-list li {
-      margin-bottom: 0.25rem;
+      position: relative;
+      padding: 0.75rem 0 0.75rem 1.5rem;
+      border-bottom: 1px solid var(--color-gray-100);
+    }
+
+    .strategy-list li:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--color-gray-400);
+      font-weight: 700;
+    }
+
+    .strategy-list li:last-child {
+      border-bottom: none;
+    }
+
+    ol.strategy-list {
+      counter-reset: item;
+    }
+
+    ol.strategy-list li {
+      padding-left: 2rem;
+    }
+
+    ol.strategy-list li:before {
+      content: counter(item);
+      counter-increment: item;
+      background: var(--color-gray-800);
+      color: var(--color-white);
+      width: 1.25rem;
+      height: 1.25rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card {
+      background: var(--color-gray-50);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
+
+    .card h4 {
+      margin-top: 0;
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .meta-info {
+      text-align: right;
+      color: var(--color-text-muted);
+      font-size: 0.875rem;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--color-border);
     }
   </style>
 </head>
@@ -98,133 +236,156 @@
     <section class="page-content">
       <div class="page-content__inner page-content__inner--narrow">
         <div class="internal-notice">
-          ⚠️ 内部資料 - 公開前に削除してください ⚠️
+          ⚠️ 内部資料 - 公開前に削除
         </div>
 
         <div class="strategy-section">
-          <h3>マーケティングフロー上の位置づけ</h3>
-          <div class="flow-diagram">【認知】
-  広告（Instagram、電車、看板）
-  チラシ（校門前配布、新聞折込）
-  SNS（公式Instagram）
-      ↓
-【情報収集】
-  ★ WEBサイト ← 本サイトの役割
-      ↓
-【問い合わせ】
-  LINE公式 / 問い合わせフォーム
-      ↓
-【体験】
-  施設説明 → 1日無料体験
-      ↓
-【入会】
-  契約・利用開始</div>
+          <h3>マーケティングフロー</h3>
+          <div class="flow-diagram">
+            <div class="flow-label">認知</div>
+            <span class="flow-step">広告</span>
+            <span class="flow-step">チラシ</span>
+            <span class="flow-step">SNS</span>
+            <span class="flow-arrow">↓</span>
+            <div class="flow-label">情報収集</div>
+            <span class="flow-step flow-step--highlight">★ WEBサイト</span>
+            <span class="flow-arrow">↓</span>
+            <div class="flow-label">問い合わせ</div>
+            <span class="flow-step">LINE公式</span>
+            <span class="flow-step">フォーム</span>
+            <span class="flow-arrow">↓</span>
+            <div class="flow-label">体験</div>
+            <span class="flow-step">施設説明 → 1日無料体験</span>
+            <span class="flow-arrow">↓</span>
+            <div class="flow-label">入会</div>
+            <span class="flow-step">契約・利用開始</span>
+          </div>
         </div>
 
         <div class="strategy-section">
           <h3>WEBサイトの役割</h3>
-          <h4>やること</h4>
-          <ul class="strategy-list">
-            <li>広告・チラシから流入した見込み客の「受け皿」</li>
-            <li>サービス内容の詳細説明（施設・料金・特徴）</li>
-            <li>信頼性の担保（セキュリティ、運営会社情報）</li>
-            <li>LINE / フォームへの誘導</li>
-          </ul>
-          <h4>やらないこと</h4>
-          <ul class="strategy-list">
-            <li>WEB上での直接契約・決済</li>
-            <li>詳細な学習コンテンツの提供</li>
-            <li>会員向け機能</li>
-          </ul>
+          <div class="two-col">
+            <div class="card">
+              <h4>やること</h4>
+              <ul class="strategy-list">
+                <li>広告・チラシからの流入の「受け皿」</li>
+                <li>サービス詳細の説明</li>
+                <li>信頼性の担保</li>
+                <li>LINE / フォームへの誘導</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h4>やらないこと</h4>
+              <ul class="strategy-list">
+                <li>WEB上での直接契約・決済</li>
+                <li>学習コンテンツの提供</li>
+                <li>会員向け機能</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div class="strategy-section">
-          <h3>サイト構成の選択：LP型 vs サイト型</h3>
-          <p><strong>選択：サイト型（複数ページ構成）</strong></p>
-          <h4>理由</h4>
+          <h3>サイト型を選択した理由</h3>
           <ol class="strategy-list">
-            <li><strong>ターゲットが複数</strong><br>高校生、浪人生、社会人、法人と多岐にわたる。各ターゲットに必要な情報が異なり、LPでは情報過多になり離脱リスク。</li>
-            <li><strong>検討期間が長い</strong><br>月額サービスのため即決しにくい。複数回訪問して情報収集する想定。ページ分割で再訪時に必要情報へ直接アクセス可能。</li>
-            <li><strong>SEO観点</strong><br>「浜松 自習室」「高校生 自習室」等の検索流入を狙う。ページごとにキーワード最適化が可能。</li>
-            <li><strong>SWELL実装との相性</strong><br>WordPressテーマSWELLで実装予定。標準機能で複数ページ管理が容易。</li>
+            <li><strong>ターゲットが複数</strong><br>高校生、浪人生、社会人、法人と多岐にわたる</li>
+            <li><strong>検討期間が長い</strong><br>月額サービスのため複数回訪問を想定</li>
+            <li><strong>SEO観点</strong><br>「浜松 自習室」等の検索流入を狙う</li>
+            <li><strong>SWELL実装</strong><br>WordPressテーマでページ管理が容易</li>
           </ol>
         </div>
 
         <div class="strategy-section">
           <h3>ページ構成</h3>
           <table class="strategy-table">
-            <tr>
-              <th>ページ</th>
-              <th>役割</th>
-              <th>主なターゲット</th>
-            </tr>
-            <tr>
-              <td>TOP (index.html)</td>
-              <td>全体概要・第一印象・アクセス</td>
-              <td>全員</td>
-            </tr>
-            <tr>
-              <td>Mira Studyとは (about.html)</td>
-              <td>コンセプト・3つの仕組み</td>
-              <td>検討層</td>
-            </tr>
-            <tr>
-              <td>施設紹介 (facility.html)</td>
-              <td>設備・セキュリティ詳細</td>
-              <td>保護者・検討層</td>
-            </tr>
-            <tr>
-              <td>料金 (price.html)</td>
-              <td>全プラン・支払い方法</td>
-              <td>検討層</td>
-            </tr>
-            <tr>
-              <td>よくある質問 (faq.html)</td>
-              <td>疑問解消</td>
-              <td>検討層</td>
-            </tr>
-            <tr>
-              <td>問い合わせ (contact.html)</td>
-              <td>LINE・フォーム誘導</td>
-              <td>行動層</td>
-            </tr>
+            <thead>
+              <tr>
+                <th>ページ</th>
+                <th>役割</th>
+                <th>ターゲット</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>TOP</td>
+                <td>全体概要・第一印象</td>
+                <td>全員</td>
+              </tr>
+              <tr>
+                <td>Mira Studyとは</td>
+                <td>コンセプト・仕組み</td>
+                <td>検討層</td>
+              </tr>
+              <tr>
+                <td>施設紹介</td>
+                <td>設備・セキュリティ</td>
+                <td>保護者</td>
+              </tr>
+              <tr>
+                <td>料金</td>
+                <td>全プラン・支払い</td>
+                <td>検討層</td>
+              </tr>
+              <tr>
+                <td>よくある質問</td>
+                <td>疑問解消</td>
+                <td>検討層</td>
+              </tr>
+              <tr>
+                <td>問い合わせ</td>
+                <td>LINE・フォーム誘導</td>
+                <td>行動層</td>
+              </tr>
+            </tbody>
           </table>
         </div>
 
         <div class="strategy-section">
           <h3>コンバージョン設計</h3>
-          <h4>CVポイント</h4>
-          <ul class="strategy-list">
-            <li><strong>メイン</strong>: LINE公式への誘導（オープン前は「お知らせ登録」）</li>
-            <li><strong>サブ</strong>: 問い合わせフォーム</li>
-          </ul>
-          <h4>CTA配置</h4>
-          <ul class="strategy-list">
-            <li>全ページヘッダー: 「無料体験」ボタン</li>
-            <li>各ページ末尾: CTAセクション</li>
-            <li>TOPページ: 複数箇所にCTA</li>
-          </ul>
+          <div class="two-col">
+            <div class="card">
+              <h4>CVポイント</h4>
+              <ul class="strategy-list">
+                <li><strong>メイン</strong>: LINE公式への誘導</li>
+                <li><strong>サブ</strong>: 問い合わせフォーム</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h4>CTA配置</h4>
+              <ul class="strategy-list">
+                <li>全ページヘッダー</li>
+                <li>各ページ末尾</li>
+                <li>TOPページ複数箇所</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div class="strategy-section">
           <h3>運用フェーズ</h3>
-          <h4>Phase 1: オープン前（現在〜2026年1月）</h4>
-          <ul class="strategy-list">
-            <li>事前告知・LINE登録促進</li>
-            <li>「2026年2月オープン予定」表示</li>
-          </ul>
-          <h4>Phase 2: オープン後（2026年2月〜）</h4>
-          <ul class="strategy-list">
-            <li>通常運用開始</li>
-            <li>口コミ・実績の追加</li>
-            <li>ブログ/お知らせ機能の活用</li>
-          </ul>
+          <div class="two-col">
+            <div class="card">
+              <h4>Phase 1: オープン前</h4>
+              <ul class="strategy-list">
+                <li>事前告知・LINE登録促進</li>
+                <li>「2026年2月オープン予定」表示</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h4>Phase 2: オープン後</h4>
+              <ul class="strategy-list">
+                <li>通常運用開始</li>
+                <li>口コミ・実績の追加</li>
+                <li>ブログ/お知らせ活用</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <p style="text-align: right; color: var(--color-text-muted); margin-top: 3rem;">
-          <em>作成日: 2026年1月</em><br>
-          <em>本ドキュメントはクライアント説明用</em>
-        </p>
+        <div class="meta-info">
+          作成日: 2026年1月<br>
+          クライアント説明用資料
+        </div>
 
       </div>
     </section>
