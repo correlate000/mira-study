@@ -69,4 +69,25 @@ document.addEventListener('DOMContentLoaded', () => {
       trigger.setAttribute('aria-expanded', !isExpanded);
     });
   });
+
+  // 料金タブ切替
+  document.querySelectorAll('[data-price-tabs]').forEach(tabContainer => {
+    const buttons = tabContainer.querySelectorAll('.price-tabs__btn');
+    const contents = tabContainer.querySelectorAll('.price-tabs__content');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tabId = btn.dataset.tab;
+
+        // ボタンの状態切替
+        buttons.forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+
+        // コンテンツの表示切替
+        contents.forEach(content => {
+          content.classList.toggle('is-active', content.dataset.tabContent === tabId);
+        });
+      });
+    });
+  });
 });
