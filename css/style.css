@@ -289,11 +289,30 @@ h3.section-title {
   height: 70px;
 }
 
+.header__brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .header__logo a {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--color-gray-800);
   text-decoration: none;
+}
+
+.header__tagline {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  padding-left: 1rem;
+  border-left: 1px solid var(--color-border);
+}
+
+@media (max-width: 768px) {
+  .header__tagline {
+    display: none;
+  }
 }
 
 .header__nav {
@@ -2222,6 +2241,17 @@ h3.section-title {
   margin-bottom: 0.5rem;
 }
 
+.price-preview__point {
+  font-size: 0.9375rem;
+  color: var(--color-gray-300);
+  margin-bottom: 1rem;
+}
+
+.price-preview__point strong {
+  color: var(--color-white);
+  font-weight: 700;
+}
+
 .price-preview__recommend-desc,
 .price-preview__time {
   font-size: 0.875rem;
@@ -2313,7 +2343,19 @@ h3.section-title {
   text-align: center;
   font-size: 0.875rem;
   color: var(--color-text-light);
+  margin-bottom: 1rem;
+}
+
+.price-preview__other-target {
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
   margin-bottom: 2rem;
+}
+
+.price-preview__other-target a {
+  color: var(--color-text);
+  font-weight: 500;
 }
 
 .price-preview__cta {
