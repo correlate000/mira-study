@@ -13,9 +13,12 @@
 <body>
   <header class="header">
     <div class="header__inner">
-      <h1 class="header__logo">
-        <a href="index.html">Mira Study</a>
-      </h1>
+      <div class="header__brand">
+        <h1 class="header__logo">
+          <a href="index.html">Mira Study</a>
+        </h1>
+        <p class="header__tagline">浜松駅前の自習室 Mira Study（ミラスタディ）</p>
+      </div>
       <nav class="header__nav">
         <ul class="header__nav-list">
           <li><a href="about.html">Mira Studyとは</a></li>
@@ -49,7 +52,8 @@
             <p class="about-intro__desc">Mira Studyは、勉強を教える場所ではなく、勉強が続く「仕組み」を提供する場所。<br>「なぜ勉強するか」を明確にするところから始めます。</p>
           </div>
           <div class="about-intro__image">
-            <div class="wf-placeholder">施設イメージ</div>
+            <!-- 画像: コンセプトイメージ2.png -->
+            <img class="wf-changed" src="img/コンセプトイメージ2.png" alt="Mira Study コンセプト" loading="lazy">
           </div>
         </div>
       </div>
@@ -73,7 +77,7 @@
           </div>
           <div class="service-item__body">
             <div class="service-item__text">
-              <p>5年後の自分はどうなっている？理想の自分ならどんな人に囲まれて、何を手にしている？入会時に9つの視点から「なりたい自分」を描き、今している勉強の目的を明確にします。完成したボードは自習室のブースに掲示。やる気が出ないときの「お守り」になります。</p>
+              <p>5年後の自分はどうなっている？理想の自分ならどんな人に囲まれて、何を手にしている？入会時に9つの視点から「なりたい自分」を描き、今している勉強の目的を明確にします。<span class="wf-changed">完成したボードは個人ファイル用と自宅用にお渡しします。モチベーションが上がりにくい時に継続を支えてくれる「お守り」になります。</span></p>
               <div class="service-item__grid service-item__grid--9">
                 <div class="service-item__grid-item"><strong>人物</strong></div>
                 <div class="service-item__grid-item"><strong>進路</strong></div>
@@ -87,7 +91,10 @@
               </div>
             </div>
             <div class="service-item__image">
-              <div class="wf-placeholder">ビジョンボードのイメージ</div>
+              <!-- 画像: ミラスタビジョンボード.png / SWELL: ライトボックスで拡大表示 -->
+              <a href="img/ミラスタビジョンボード.png" class="wf-lightbox" data-swell="lightbox">
+                <img class="wf-changed" src="img/ミラスタビジョンボード.png" alt="ミラスタビジョンボード" loading="lazy">
+              </a>
             </div>
           </div>
         </div>
@@ -98,7 +105,7 @@
             <span class="service-item__tag">集中</span>
             <span class="service-item__num">02</span>
             <div class="service-item__title-wrap">
-              <h3 class="service-item__title">ミラスタタイプ16</h3>
+              <h3 class="service-item__title wf-changed">ミラスタイプ16</h3>
               <p class="service-item__subtitle">自分に合った学習スタイルを見つけて、効率よく集中する</p>
             </div>
           </div>
@@ -118,7 +125,10 @@
               </div>
             </div>
             <div class="service-item__image">
-              <div class="wf-placeholder">ミラスタタイプ16のイメージ</div>
+              <!-- 画像: ミラスタイプ16.png / SWELL: ライトボックスで拡大表示 -->
+              <a href="img/ミラスタイプ16.png" class="wf-lightbox" data-swell="lightbox">
+                <img class="wf-changed" src="img/ミラスタイプ16.png" alt="ミラスタイプ16" loading="lazy">
+              </a>
             </div>
           </div>
         </div>
@@ -155,7 +165,10 @@
               </div>
             </div>
             <div class="service-item__image">
-              <div class="wf-placeholder">ミニサクセスマップのイメージ</div>
+              <!-- 画像: ミニサクセスマップ.png / SWELL: ライトボックスで拡大表示 -->
+              <a href="img/ミニサクセスマップ.png" class="wf-lightbox" data-swell="lightbox">
+                <img class="wf-changed" src="img/ミニサクセスマップ.png" alt="ミニサクセスマップ" loading="lazy">
+              </a>
             </div>
           </div>
         </div>
@@ -175,10 +188,6 @@
             <div class="service-sub__item">
               <strong>達成ビンゴカード</strong>
               <p>目標達成をゲーム感覚で楽しめるビンゴ形式のチャレンジ。</p>
-            </div>
-            <div class="service-sub__item">
-              <strong>30秒ムービー</strong>
-              <p>自分の頑張りを振り返る短編動画で達成感を実感。</p>
             </div>
             <div class="service-sub__item">
               <strong>マインドフルネス休憩</strong>
@@ -244,18 +253,21 @@
     <!-- 代表メッセージ -->
     <section id="message" class="founder-message">
       <div class="founder-message__inner inner">
-        <h2 class="section-title"><span class="section-title__en">MESSAGE</span>代表メッセージ</h2>
+        <h2 class="section-title"><span class="section-title__en">MESSAGE</span><span class="wf-changed">運営マネージャー</span>メッセージ</h2>
         <div class="founder-message__content">
           <div class="founder-message__image">
             <div class="wf-placeholder">代表者写真</div>
           </div>
           <div class="founder-message__text">
-            <p>正直に言うと、私自身、高校時代は「将来のビジョン」なんて持っていませんでした。「とりあえず大学に行けばなんとかなる」。そう思って、周りに流されるまま進路を選びました。</p>
-            <p>転機は、教育の仕事に出会ったこと。「高校生の可能性を広げたい」という目標ができた瞬間、学ぶ意味が変わりました。目的があると、勉強は「やらされるもの」から「やりたいもの」に変わる。それを身をもって体験したんです。</p>
-            <p>個別指導塾で12年以上、たくさんの高校生を見てきました。成績が伸びる子、志望校に合格する子には共通点がありました。それは「頭の良さ」でも「才能」でもない。<strong>「何のために勉強するか」がはっきりしていること</strong>でした。</p>
-            <p>かつての自分のように迷っている高校生に、「勉強する意味」を見つけてほしい。そんな想いで、この自習室を立ち上げました。</p>
+            <p class="wf-changed">正直に言うと、私自身、高校時代は「将来のビジョン」なんて持っていませんでした。「とりあえず大学に行けばなんとかなる」そう思って、周りに流されるまま進路を選びました。ビジョンを達成するための「手段」であるはずの勉強そのものが「目的」になっていたのです。</p>
+            <p class="wf-changed">転機は、教育の仕事に出会ったこと。仕事をしていく中で「将来どんな自分でいたいのか」「何を大切にして生きたいのか」これらが明確になった瞬間、働く意味が変わりました。</p>
+            <p class="wf-changed">目的があると、仕事は「やらされるもの」から「やりたいもの」に変わる。自然と継続して行動ができ、最終的に成果に繋がる。それを身をもって知ったんです。</p>
+            <p class="wf-changed">勉強も同じです。個別指導塾で12年以上、たくさんの中高生を見てきました。成績が伸びる子、志望校に合格する子には共通点がありました。それは「頭の良さ」でも「才能」でもない。<strong>「何のために勉強するか」がはっきりしていること</strong>でした。</p>
+            <p class="wf-changed">自分自身の失敗経験と、教育者としてたくさんの成功事例を見てきた経験から、私の中で一つの思いがはっきりと形になってきました。</p>
+            <p class="wf-changed">「勉強の『目的設計』と『習慣づくり』の両方に本気で向き合える場所をつくりたい！」<br>「ただ志望校に合格するだけでなく、未来に希望を持てる学生を増やしたい！」</p>
+            <p class="wf-changed">そんな想いで、この自習室を立ち上げました。</p>
             <p class="founder-message__signature">
-              Mira Study 代表<br>
+              Mira Study <span class="wf-changed">運営マネージャー</span><br>
               <strong>石津 健人</strong>
             </p>
           </div>

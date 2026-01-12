@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mira Study（ミラスタディ）| 浜松の高校生向け自習室</title>
-  <meta name="description" content="浜松市の高校生・浪人生向け自習室。全席個別ブース、Wi-Fi完備。月額18,150円〜で毎日利用可能。新浜松駅徒歩1分。2026年2月オープン。">
+  <meta name="description" content="浜松市の高校生・浪人生向け自習室。全席個別ブース、Wi-Fi完備。月額18,150円〜で毎日利用可能。新浜松駅徒歩2分。2026年2月オープン。">
 
   <!-- OGP -->
   <meta property="og:title" content="Mira Study（ミラスタディ）| 浜松の高校生向け自習室">
-  <meta property="og:description" content="浜松市の高校生・浪人生向け自習室。月額18,150円〜で毎日通い放題。新浜松駅徒歩1分。">
+  <meta property="og:description" content="浜松市の高校生・浪人生向け自習室。月額18,150円〜で毎日通い放題。新浜松駅徒歩2分。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mirastudy.jp/"><!-- TODO: 実際のURLに変更 -->
   <meta property="og:image" content="https://mirastudy.jp/images/ogp.jpg"><!-- TODO: OGP画像を設定 -->
@@ -55,7 +55,7 @@
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "15:30",
+        "opens": "07:00",
         "closes": "22:00"
       },
       {
@@ -134,11 +134,11 @@
         <ul class="hero__points">
           <li>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            新浜松駅 徒歩1分
+            <span class="wf-changed">新浜松駅 徒歩2分</span>
           </li>
           <li>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            平日15:30〜22:00 / 土日祝9:00〜20:00
+            平日<span class="wf-changed">7:00〜22:00</span> / 土日祝9:00〜20:00
           </li>
         </ul>
         <div class="hero__cta">
@@ -183,8 +183,11 @@
               <a href="about.html" class="btn btn--outline">Mira Studyについて詳しく見る</a>
             </div>
           </div>
-          <div class="concept__image">
-            <div class="wf-placeholder wf-placeholder--lg">コンセプトイメージ</div>
+          <div class="concept__image concept__image--dual">
+            <!-- 画像: コンセプトイメージ.png -->
+            <img class="wf-changed" src="img/コンセプトイメージ.png" alt="Mira Studyのコンセプトイメージ" loading="lazy">
+            <!-- 画像: コンセプトイメージ2.png -->
+            <img class="wf-changed" src="img/コンセプトイメージ2.png" alt="Mira Studyのコンセプトイメージ" loading="lazy">
           </div>
         </div>
       </div>
@@ -198,11 +201,20 @@
         <h2 class="section-title"><span class="section-title__en">FEATURES</span>学びに集中できる空間</h2>
         <div class="facility-preview__gallery">
           <div class="facility-preview__main">
-            <div class="wf-placeholder wf-placeholder--lg">施設写真（メイン）</div>
+            <figure class="wf-figure">
+              <img class="wf-changed" src="img/自習室全体イメージ.png" alt="自習室全体イメージ" loading="lazy">
+              <figcaption>自習室全体イメージ</figcaption>
+            </figure>
           </div>
           <div class="facility-preview__thumbs">
-            <div class="wf-placeholder">個別ブース</div>
-            <div class="wf-placeholder">休憩スペース</div>
+            <figure class="wf-figure">
+              <img class="wf-changed" src="img/個別ブースイメージ.png" alt="個別ブース" loading="lazy">
+              <figcaption>個別ブースイメージ</figcaption>
+            </figure>
+            <figure class="wf-figure">
+              <img class="wf-changed" src="img/休憩スペースイメージ.png" alt="休憩スペース" loading="lazy">
+              <figcaption>休憩スペースイメージ</figcaption>
+            </figure>
             <div class="wf-placeholder">エントランス</div>
           </div>
         </div>
@@ -224,7 +236,7 @@
             <span>入退室を保護者に通知</span>
           </li>
         </ul>
-        <p class="facility-preview__note">※お子様の入退室はLINEでお知らせ。安心して見守れます。</p>
+        <p class="facility-preview__note">※お子様の入退室は<span class="wf-changed">入退室アプリ「comiru」</span>でお知らせ。安心して見守れます。</p>
         <div class="facility-preview__cta">
           <a href="facility.html" class="btn btn--outline">施設の詳細を見る</a>
         </div>
@@ -241,7 +253,7 @@
           <p class="price-preview__label">高校生向け おすすめ</p>
           <h3 class="price-preview__name">来放題プラン</h3>
           <p class="price-preview__point">予備校の<strong>半額以下</strong>で毎日通える</p>
-          <p class="price-preview__time">平日15:30〜22:00 / 土日祝9:00〜20:00</p>
+          <p class="price-preview__time">平日<span class="wf-changed">7:00〜22:00</span> / 土日祝9:00〜20:00</p>
           <p class="price-preview__amount">月額 <span>16,500</span>円〜<small>（税込18,150円〜）</small></p>
           <p class="price-preview__note">※年払いの場合</p>
         </div>
@@ -294,15 +306,15 @@
           <li class="flow__step">
             <span class="flow__step-num">3</span>
             <div class="flow__step-content">
-              <h3>1日無料体験</h3>
-              <p>実際に使ってみてください</p>
+              <h3 class="wf-changed">当日に1日無料体験</h3>
+              <p class="wf-changed">実際に自習室を利用＆ミラスタワークを体験してみてください</p>
             </div>
           </li>
           <li class="flow__step">
             <span class="flow__step-num">4</span>
             <div class="flow__step-content">
               <h3>入会</h3>
-              <p class="wf-unverified">当日から利用開始できます</p>
+              <p class="wf-changed">最短で翌日から利用開始できます</p>
             </div>
           </li>
         </ol>
@@ -361,13 +373,13 @@
           <div class="access-preview__info">
             <p class="access-preview__station">
               <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="3"/><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              <strong>新浜松駅 徒歩1分</strong> / <span class="wf-unverified">JR浜松駅 徒歩5分</span>
+              <span class="wf-changed">JR浜松駅 徒歩5分</span> / <span class="wf-changed">遠州鉄道 新浜松駅 徒歩2分</span>
             </p>
             <dl class="access-preview__detail">
               <dt>住所</dt>
               <dd>〒430-XXXX 静岡県浜松市中央区○○町○-○</dd>
               <dt>営業時間</dt>
-              <dd>平日15:30〜22:00 / 土日祝9:00〜20:00</dd>
+              <dd>平日<span class="wf-changed">7:00〜22:00</span> / 土日祝9:00〜20:00</dd>
             </dl>
           </div>
         </div>
